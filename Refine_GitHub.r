@@ -20,7 +20,7 @@ list<- list(product_code = c('p','v','x','q'),categories = c('smartphone','TV','
 
 # 3: Add product categories: join two table between list and refine
 
-refine <- merge(refine1,list, by = "product_code", all = TRUE)
+refine <- merge(refine,list, by = "product_code", all = TRUE)
 
 
 #Define a function that could covert lowercase to title
