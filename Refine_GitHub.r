@@ -35,4 +35,4 @@ refine_Final <- unite_(refine, "Fulladdress",c("country", "city", "address"),sep
 
 refine_Final$Fulladdress <- simpleCap(refine_Final$Fulladdress)
 
-write.table(refine_Final, file = "Refine_Final Dataset.csv", append = FALSE, quote = TRUE, sep = " ", eol = "\n", na = "NA", dec = ".", row.names = TRUE,col.names = TRUE)
+write.csv(refine_Final, file = "Refine_Final Dataset.csv")
